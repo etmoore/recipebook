@@ -7,10 +7,9 @@
     = csrf_meta_tags
   %body
 
-    %nav.navbar.navbar-default
-      .container
-        .navbar-header
-          = link_to "RecipeBook", root_path, class: "navbar-brand"
+    = render 'layouts/header'
 
     .container
       = yield
+
+    = render 'layouts/footer'
