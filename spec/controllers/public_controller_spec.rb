@@ -7,4 +7,11 @@ describe PublicController do
       expect(response).to render_template('index')
     end
   end
+
+  describe 'about' do
+    it 'renders the about page' do
+      get :about
+      expect(response).to render_template('about')
+    end
+  end
 end
