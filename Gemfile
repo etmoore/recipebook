@@ -13,6 +13,8 @@ gem 'haml'
 gem 'bootstrap-sass'
 gem 'sass-rails'
 
+gem 'bcrypt'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
