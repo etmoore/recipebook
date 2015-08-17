@@ -1,0 +1,9 @@
+.page-header
+  .pull-right
+    = link_to 'Edit User', edit_user_path(@user), class: 'btn btn-info'
+    = link_to 'Delete User', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"
+  %h1
+    = @user.user_name
+
+%p
+  = @user.email

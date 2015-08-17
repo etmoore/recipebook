@@ -1,0 +1,16 @@
+.page-header
+  .pull-right
+    = link_to "New User", new_user_path, class: 'btn btn-primary'
+  %h1 Users
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Username
+      %th Email
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= link_to user.user_name, user_path(user)
+        %td= user.email
+        %td= link_to "Edit", edit_user_path(user)
